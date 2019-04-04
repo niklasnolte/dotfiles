@@ -4,6 +4,16 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+### Variables
+#
+# Logo key. Use Mod1 for Alt.
+set $mod Mod4
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+
 #keyboard settings
 input * {
   xkb_layout de
@@ -21,7 +31,7 @@ input 2:7:SynPS/2_Synaptics_TouchPad {
 }
 
 # no header for windows
-default_border none
+#default_border none
 
 # Your preferred terminal emulator
 set $term termite
@@ -59,17 +69,11 @@ bindsym F10 exec playerctl previous
 bindsym XF86MonBrightnessDown exec light -U 5
 bindsym XF86MonBrightnessUp exec light -A 5
 
+#screenshot
+bindsym $mod+p exec grim -g "$(slurp)" slurp.png
+
 
 #only defaults after this point ###################
-### Variables
-#
-# Logo key. Use Mod1 for Alt.
-set $mod Mod4
-# Home row direction keys, like vim
-set $left h
-set $down j
-set $up k
-set $right l
 
 ### Output configuration
 #
