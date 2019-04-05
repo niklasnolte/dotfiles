@@ -66,8 +66,8 @@ bindsym F10 exec playerctl previous
 
 
 #brightness - depends on light (yay -S light)
-bindsym XF86MonBrightnessDown exec light -U 5
-bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 3
+bindsym XF86MonBrightnessUp exec light -A 3
 
 #screenshot
 bindsym $mod+p exec grim -g "$(slurp)" slurp.png
