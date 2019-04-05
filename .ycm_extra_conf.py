@@ -13,11 +13,11 @@ BASE_FLAGS = [
         '-Wno-variadic-macros',
         '-fexceptions',
         '-ferror-limit=10000',
-#        '-DNDEBUG',
+        '-DNDEBUG',
         '-std=c++17',
-#        '-xc++',
-#        '-I/usr/lib/',
-#        '-I/usr/include/'
+        '-xc++',
+        '-I/usr/lib/',
+        '-I/usr/include/'
         ]
 
 SOURCE_EXTENSIONS = [
@@ -194,7 +194,14 @@ def FlagsForCompilationDatabase(root, filename):
     try:
         # Last argument of next function is the name of the build folder for
         # out of source projects
-        compilation_db_path = FindNearest(root, 'compile_commands.json', 'build.{}'.format(os.environ['CMTCONFIG']))
+        try:
+            compilation_db_path = FindNearest(root, 'compile_commands.json', 'build.{}'.format(os.environ['CMTCONFIG']))
+        except RuntimeError:
+            try:
+                compilation_db_path = FindNearest(root, 'compile_commands.json', 'build')
+            except RuntimeError:
+                pass
+
         compilation_db_dir = os.path.dirname(compilation_db_path)
         logging.info("Set compilation database directory to " + compilation_db_dir)
         compilation_db =  ycm_core.CompilationDatabase(compilation_db_dir)
@@ -228,3 +235,4 @@ def FlagsForFile(filename):
             'flags': final_flags,
             'do_cache': True
             }
+

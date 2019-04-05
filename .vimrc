@@ -1,14 +1,13 @@
 source $VIMRUNTIME/defaults.vim
 
-
 set nocompatible
-filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
+Bundle 'nelstrom/vim-visual-star-search'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ctrlpvim/ctrlp.vim'
 call vundle#end()
@@ -17,6 +16,7 @@ filetype plugin indent on
 "commenting
 let g:NERDCommentEmptyLines = 1
 let g:NERDDefaultAlign = 'left'
+let g:NERDUsePlaceHolders = 0
 nnoremap <C-@> :call NERDComment(0,"toggle")<CR>
 vnoremap <C-@> :call NERDComment(0,"toggle")<CR>
 
@@ -39,10 +39,6 @@ map <C-K> :pyf /usr/share/clang/clang-format.py<cr>
 imap <C-K> <c-o>:pyf /usr/share/clang/clang-format.py<cr>
 
 
-if has('persistent_undo')      "check if your vim version supports it
-  set undofile                 "turn on the feature  
-  set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
-  endif
 
 set hlsearch
 set list
@@ -52,7 +48,10 @@ set clipboard=unnamed
 set paste
 set backupdir=~/.vimbackup
 set directory=~/.vimbackup
+"persistent undo
+set undofile
 set undodir=~/.vimbackup
+
 set shiftwidth=2
 set expandtab
 set tabstop=2
@@ -82,3 +81,12 @@ set hidden
 set ignorecase
 set wildignorecase
 
+set foldmethod=syntax
+set foldlevel=0
+set foldnestmax=1
+" Removes trailing spaces
+function TrimWhiteSpace()
+  %s/\s*$//
+  ''
+endfunction
+map <F2> :call TrimWhiteSpace()<CR>
