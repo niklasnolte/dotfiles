@@ -6,9 +6,11 @@ vundle
 light
 playerctl
 pulseaudio
+pavucontrol
 termite
 sway
 i3status
+swaylock
 tmux
 rofi
 ripgrep
