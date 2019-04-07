@@ -72,8 +72,7 @@ bindsym XF86MonBrightnessDown exec light -U 3
 bindsym XF86MonBrightnessUp exec light -A 3
 
 #screenshot
-bindsym $mod+p exec grim -g "$(slurp)" slurp.png
-
+bindsym $mod+p exec sh ~/.config/sway/screenshot.sh
 
 #only defaults after this point ###################
 
