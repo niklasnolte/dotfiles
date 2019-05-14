@@ -98,4 +98,4 @@ alias open="xdg-open"
 alias ll="ls -lah"
 
 export PATH=$PATH:/home/nn/miniconda3/bin
-alias mountq2="sshfs hltv0119:/home/nnolte mountpoint/q2"
+alias mount_lbquantaperf01="sshfs lbquantaperf01:/ ~/mountpoint/lbquantaperf01"
