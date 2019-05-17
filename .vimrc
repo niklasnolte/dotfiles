@@ -10,6 +10,7 @@ Plugin 'vim-airline/vim-airline'
 Bundle 'nelstrom/vim-visual-star-search'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
 call vundle#end()
 filetype plugin indent on
 
