@@ -99,4 +99,4 @@ alias ll="ls -lah"
 
 export PATH=$PATH:/home/nn/miniconda3/bin
 alias mountq2="sshfs q2:/home/nnolte mountpoint/q2"
-alias mountlbquanta="sshfs lbquantaperf01:/ mountpoint/q2"
+alias mount_lbquantaperf01="sshfs lbquantaperf01:/ ~/mountpoint/lbquantaperf01"
