@@ -38,8 +38,11 @@ endif
 map <C-K> :pyf /usr/share/clang/clang-format.py<cr>
 imap <C-K> <c-o>:pyf /usr/share/clang/clang-format.py<cr>
 
+"autocompletion
+"filetype plugin on
+"set omnifunc=syntaxcomplete#Complete
 
-
+"misc
 set hlsearch
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
@@ -90,3 +93,8 @@ function TrimWhiteSpace()
   ''
 endfunction
 map <F2> :call TrimWhiteSpace()<CR>
+
+function GoRun()
+  !go run %
+endfunction
+map <F3> :call GoRun() <CR>
