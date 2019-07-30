@@ -55,9 +55,9 @@ bar {
 set $menu rofi -show run
 
 #audio
-bindsym F8 exec pactl set-sink-volume $(pacmd list-sinks |awk '/* index:/{print $3}') +5%
-bindsym F6 exec pactl set-sink-volume $(pacmd list-sinks |awk '/* index:/{print $3}') -5%
-bindsym F7 exec pactl set-sink-mute $(pacmd list-sinks |awk '/* index:/{print $3}') toggle
+bindsym F8 exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym F6 exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym F7 exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 #audio playback control - depends on playerctl
 bindsym F11 exec playerctl play-pause
