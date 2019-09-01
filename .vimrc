@@ -11,6 +11,7 @@ Bundle 'nelstrom/vim-visual-star-search'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'fatih/vim-go'
 call vundle#end()
 filetype plugin indent on
 
@@ -42,9 +43,9 @@ let g:ctrlp_working_path_mode = 0
 map <C-K> :pyf /usr/share/clang/clang-format.py<cr>
 imap <C-K> <c-o>:pyf /usr/share/clang/clang-format.py<cr>
 
-"autocompletion
-"filetype plugin on
-"set omnifunc=syntaxcomplete#Complete
+"vim-go configuration
+let g:go_null_module_warning = 0
+let g:go_fmt_command = 'goimports'
 
 "misc
 set hlsearch

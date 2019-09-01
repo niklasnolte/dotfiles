@@ -58,6 +58,7 @@ set $menu rofi -show run
 bindsym F8 exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym F6 exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym F7 exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym F4 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 #audio playback control - depends on playerctl
 bindsym F11 exec playerctl play-pause
