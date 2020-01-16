@@ -100,3 +100,7 @@ alias mountq2="sshfs q2:/home/nnolte mountpoint/q2"
 alias mount_lbquantaperf01="sshfs lbquantaperf01:/ ~/mountpoint/lbquantaperf01"
 
 set editing-mode vi
+
+#keychain
+/usr/bin/keychain ~/.ssh/id_rsa
+source $HOME/.keychain/$(hostname)-sh
