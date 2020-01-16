@@ -12,6 +12,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'fatih/vim-go'
+Plugin 'psf/black'
 call vundle#end()
 filetype plugin indent on
 
@@ -79,8 +80,6 @@ vnoremap <C-y> "*y
 nnoremap <C-p> "*gP
 vnoremap <C-p> "*gP
 "multiple files handling
-"nnoremap <C-t> :tabnew<CR>
-"nnoremap <C-n> :tabnext<CR>
 nnoremap <C-n> :bprev<CR>
 nnoremap <C-m> :bnext<CR>
 nnoremap <C-b> :bd<CR>
