@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-source .zshrc.$(whoami)
+source ~/.zshrc.$(whoami)
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -104,3 +104,6 @@ set editing-mode vi
 #keychain
 /usr/bin/keychain ~/.ssh/id_rsa
 source $HOME/.keychain/$(hostname)-sh
+
+#for haskell
+export PATH=$PATH:/usr/bin/core_perl
