@@ -61,9 +61,9 @@ bindsym F7 exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym F4 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 #audio playback control - depends on playerctl
-bindsym F11 exec playerctl play-pause
-bindsym F12 exec playerctl next
-bindsym F10 exec playerctl previous
+bindsym F10 exec playerctl play-pause
+bindsym F11 exec playerctl next
+bindsym F9 exec playerctl previous
 
 #screen lock
 exec swayidle -w \
