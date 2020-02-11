@@ -1,0 +1,17 @@
+{
+    "terminal.integrated.shellArgs.linux": [
+        "-l"
+    ],
+    "latex-workshop.message.update.show": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": true
+    },
+    "gitlens.views.repositories.files.layout": "list",
+    "vim.handleKeys": {
+        "<C-o>": false,
+        "<C-t>": false,
+        "<C-k>": false,
+    },
+    "workbench.startupEditor": "newUntitledFile"
+}
