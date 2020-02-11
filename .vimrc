@@ -5,14 +5,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'arcticicestudio/nord-vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
-Bundle 'nelstrom/vim-visual-star-search'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'fatih/vim-go'
-Plugin 'psf/black'
+Plugin 'neoclide/coc.nvim', {'pinned': '1'} "use branch release
 call vundle#end()
 filetype plugin indent on
 
@@ -22,10 +20,6 @@ let g:NERDDefaultAlign = 'left'
 let g:NERDUsePlaceHolders = 0
 nnoremap <C-@> :call NERDComment(0,"toggle")<CR>
 vnoremap <C-@> :call NERDComment(0,"toggle")<CR>
-
-"for YCM
-let g:ycm_global_ycm_extra_conf = '/home/nn/.ycm_extra_conf.py'
-let g:ycm_autoclose_preview_window_after_completion = 1
 
 "for airline
 let g:airline#extensions#tabline#enabled = 1
@@ -40,21 +34,11 @@ if executable('rg')
 endif
 let g:ctrlp_working_path_mode = 0
 
-"clang formatting
-map <C-K> :pyf /usr/share/clang/clang-format.py<cr>
-imap <C-K> <c-o>:pyf /usr/share/clang/clang-format.py<cr>
-
-"vim-go configuration
-let g:go_null_module_warning = 0
-let g:go_fmt_command = 'goimports'
-
 "misc
 set hlsearch
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 set viminfo='20,<10000
-set clipboard=unnamed
-set paste
 set backupdir=~/.vimbackup
 set directory=~/.vimbackup
 "persistent undo
@@ -88,9 +72,6 @@ set hidden
 set ignorecase
 set wildignorecase
 
-set foldmethod=syntax
-set foldlevel=0
-set foldnestmax=1
 " Removes trailing spaces
 function TrimWhiteSpace()
   %s/\s*$//
@@ -98,7 +79,25 @@ function TrimWhiteSpace()
 endfunction
 map <F2> :call TrimWhiteSpace()<CR>
 
-function GoRun()
-  !go run %
+"coc configuration
+
+"fix current line
+nmap <leader>qf  <Plug>(coc-fix-current)
+"show docs
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+"goto definition
+nnoremap <silent> <leader>go :call CocAction('jumpDefinition')<CR>
+"format
+nnoremap <silent> <leader>ff :call CocAction('format')<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
 endfunction
-map <F3> :call GoRun() <CR>
+
+" Close preview window after completion is done
+autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+
