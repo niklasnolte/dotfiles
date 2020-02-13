@@ -17,10 +17,9 @@ set $right l
 #keyboard settings
 input * {
   xkb_layout de
-  xkb_variant neo
+  xkb_variant neo_qwertz
   repeat_delay 240
   repeat_rate 50
-  
 }
 
 #touchpad settings

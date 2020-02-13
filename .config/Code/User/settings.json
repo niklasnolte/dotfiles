@@ -13,5 +13,6 @@
         "<C-t>": false,
         "<C-k>": false
     },
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "remote.SSH.showLoginTerminal": true
 }
