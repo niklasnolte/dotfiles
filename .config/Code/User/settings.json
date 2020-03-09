@@ -9,10 +9,41 @@
     },
     "gitlens.views.repositories.files.layout": "list",
     "vim.handleKeys": {
-        "<C-o>": false,
         "<C-t>": false,
-        "<C-k>": false
+        "<C-k>": false,
+        "<C-d>": false
     },
     "workbench.startupEditor": "newUntitledFile",
-    "remote.SSH.showLoginTerminal": true
+    "remote.SSH.showLoginTerminal": true,
+    "cSpell.enabledLanguageIds": [
+        "toml"
+    ],
+    "git.ignoreLegacyWarning": true,
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "files.autoSave": "onFocusChange",
+    "workbench.editor.enablePreview": false,
+    "python.dataScience.askForKernelRestart": false,
+    "git.confirmSync": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "terminal.integrated.scrollback": 100000,
+    "C_Cpp.updateChannel": "Insiders",
+    "gitlens.views.compare.files.layout": "tree",
+    "cmake.configureOnOpen": false,
+    "vim.normalModeKeyBindings": [
+        {
+            "before" : ["u"],
+            "commands" : [
+                "undo"
+            ]
+        },
+        {
+            "before" : ["<C-r>"],
+            "commands" : [
+                "redo"
+            ]
+        }
+    ]
 }
