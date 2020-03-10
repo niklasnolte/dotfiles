@@ -11,7 +11,8 @@
     "vim.handleKeys": {
         "<C-t>": false,
         "<C-k>": false,
-        "<C-d>": false
+        "<C-d>": false,
+        "<C-b>": false,
     },
     "workbench.startupEditor": "newUntitledFile",
     "remote.SSH.showLoginTerminal": true,
