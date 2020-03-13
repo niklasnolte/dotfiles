@@ -5,14 +5,15 @@
     "latex-workshop.message.update.show": false,
     "latex-workshop.view.pdf.viewer": "tab",
     "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": true
+        "suppressCommitHasNoPreviousCommitWarning": true,
+        "suppressGitVersionWarning": true
     },
     "gitlens.views.repositories.files.layout": "list",
     "vim.handleKeys": {
         "<C-t>": false,
         "<C-k>": false,
         "<C-d>": false,
-        "<C-b>": false,
+        "<C-b>": false
     },
     "workbench.startupEditor": "newUntitledFile",
     "remote.SSH.showLoginTerminal": true,
@@ -33,6 +34,10 @@
     "C_Cpp.updateChannel": "Insiders",
     "gitlens.views.compare.files.layout": "tree",
     "cmake.configureOnOpen": false,
+    "workbench.panel.defaultLocation": "right",
+    "python.formatting.provider": "black",
+    "C_Cpp.intelliSenseCacheSize": 1000,
+    "editor.autoClosingBrackets": "never",
     "vim.normalModeKeyBindings": [
         {
             "before" : ["u"],
