@@ -67,8 +67,8 @@ bindsym F9 exec playerctl previous
 #screen lock
 exec swayidle -w \
         timeout 500 'swaylock -f -c 000000' \
-        timeout 500 'swaymsg "output * dpms off"' \
-             resume 'swaymsg "output * dpms on"' \
+        timeout 1000 'swaymsg "output * dpms off"' \
+              resume 'swaymsg "output * dpms on"' \
         before-sleep 'swaylock -f -c 000000'
 
 bindsym $mod+o exec swaylock -c 000000
@@ -86,10 +86,13 @@ bindsym $mod+p exec sh ~/.config/sway/screenshot.sh
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+
+output DP-4 position 0,0
+output eDP-1 position 2560,0
 #
 # Example configuration:
 #
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
+   #output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
