@@ -4,13 +4,13 @@ set nocompatible
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'arcticicestudio/nord-vim'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'tomasiser/vim-code-dark'
 Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'neoclide/coc.nvim', {'pinned': '1'} "use branch release
+"use branch release
+Plugin 'neoclide/coc.nvim', {'pinned': '1'}
 call vundle#end()
 filetype plugin indent on
 
@@ -50,8 +50,8 @@ set expandtab
 set tabstop=2
 set showcmd
 set wildmenu
-let g:nord_comment_brightness = 1
-colorscheme nord
+colorscheme codedark
+let g:airline_theme = 'codedark'
 set history=10000
 set mouse=a
 autocmd VimLeave * call system('echo ' . shellescape(getreg('+')) . ' | xclip -selection clipboard')
@@ -101,3 +101,5 @@ endfunction
 " Close preview window after completion is done
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
+" swapping elements
+:vnoremap <C-X> <Esc>`.``gvP``P
