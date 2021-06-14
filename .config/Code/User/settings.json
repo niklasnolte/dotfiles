@@ -76,15 +76,23 @@
     "jupyter.askForKernelRestart": false,
     "jupyter.jupyterServerType": "remote",
     "jupyter.textOutputLimit": 100000,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+      "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "liveshare.authenticationProvider": "GitHub",
     "GitLive.Issue tracker integration": "Disabled",
     "extensions.ignoreRecommendations": true,
+    "jupyter.alwaysTrustNotebooks": true,
+    "gitlens.views.branches.showBranchComparison": false,
+    "python.insidersChannel": "daily",
+    "tabnine.experimentalAutoImports": true,
+    "explorer.confirmDelete": false,
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
     "window.zoomLevel": 1,
 
 }

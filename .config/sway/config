@@ -87,8 +87,9 @@ bindsym $mod+p exec sh ~/.config/sway/screenshot.sh
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
-output DP-4 position 0,0
-output eDP-1 position 2560,0
+output eDP-1 position 0,0
+output DP-4 position 1920,0
+
 #
 # Example configuration:
 #
