@@ -33,7 +33,7 @@ input 2:7:SynPS/2_Synaptics_TouchPad {
 #default_border none
 
 # Your preferred terminal emulator
-set $term gnome-terminal
+set $term alacritty
 
 # Status Bar:
 bar {
@@ -51,7 +51,9 @@ bar {
 }
 
 #application launcher
-set $menu rofi -show run
+for_window [app_id="^launcher$"] floating enable, sticky enable, resize set 30 ppt 60 ppt, border pixel 10
+set $menu exec $term --class=launcher -e /usr/bin/sway-launcher-desktop
+
 
 #audio
 bindsym F8 exec pactl set-sink-volume @DEFAULT_SINK@ +5%

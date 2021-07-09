@@ -105,5 +105,7 @@
     },
     "search.useIgnoreFiles": false,
     "window.zoomLevel": 1,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "editor.fontFamily": "Source Code Pro",
 
 }

@@ -7,14 +7,14 @@ light
 playerctl
 pulseaudio
 pavucontrol
-termite
 sway
 i3status
 swaylock
 tmux
-rofi
+sway-launcher-desktop
 ripgrep
 slurp
 grim
 wl-clipboard
 librefox
+chrome
