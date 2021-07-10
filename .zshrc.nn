@@ -2,9 +2,6 @@
 export ZSH=/usr/share/oh-my-zsh/
 
 
-#for dotnet tools
-export PATH=$PATH:~/.dotnet/tools/
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 function set_conda() {
