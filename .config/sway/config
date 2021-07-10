@@ -23,7 +23,7 @@ input * {
 }
 
 #touchpad settings
-input 2:7:SynPS/2_Synaptics_TouchPad {
+input 1739:52824:SYNA8008:00_06CB:CE58_Touchpad {
   dwt enabled
   tap enabled
   middle_emulation enabled
