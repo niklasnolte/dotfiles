@@ -107,5 +107,14 @@
     "window.zoomLevel": 1,
     "terminal.integrated.defaultProfile.linux": "zsh",
     "editor.fontFamily": "Source Code Pro",
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+      "*": true,
+      "yaml": true,
+      "plaintext": false,
+      "markdown": false
+    },
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
 
 }
