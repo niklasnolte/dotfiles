@@ -2,9 +2,6 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 source ~/.zshrc.$(whoami)
 
-# ssh agent
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -89,3 +86,10 @@ set editing-mode vi
 #for haskell
 export PATH=$PATH:/usr/bin/core_perl
 
+#gnome keyring
+if [ -n "$DESKTOP_SESSION" ];then
+    eval $(gnome-keyring-daemon --start)
+    export SSH_AUTH_SOCK
+fi
+
+export NNN_PLUG='u:umounttree;o:multopen'

@@ -16,5 +16,6 @@ ripgrep
 slurp
 grim
 wl-clipboard
-librefox
 chrome
+ipython
+gnome-keyring

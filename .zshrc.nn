@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/usr/share/oh-my-zsh/
 
+export PATH=$PATH:~/.local/bin
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -18,4 +19,3 @@ function set_conda() {
   unset __conda_setup
 }
 # <<< conda initialize <<<
-
