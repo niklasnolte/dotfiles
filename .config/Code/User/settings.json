@@ -112,9 +112,23 @@
       "*": true,
       "yaml": true,
       "plaintext": false,
-      "markdown": false
+      "markdown": false,
+      "julia": false
     },
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    "remote.SSH.remotePlatform": {
+      "centos": "linux"
+    },
+    "path-intellisense.showHiddenFiles": true,
+    "path-autocomplete.triggerOutsideStrings": true,
+    "terminal.integrated.commandsToSkipShell": [
+      "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true,
+    "julia.executablePath": "/usr/bin/julia",
+    "julia.enableTelemetry": true,
+    "julia.format.indent": 2,
+    "julia.completionmode": "import",
 
 }
