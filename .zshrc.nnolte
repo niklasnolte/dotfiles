@@ -1,5 +1,2 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/usr/share/oh-my-zsh
-
-# set my smaller monitor to the left
-swaymsg output HDMI-A-2 "Position 0 0"

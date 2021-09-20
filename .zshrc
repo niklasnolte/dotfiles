@@ -92,4 +92,9 @@ if [ -n "$DESKTOP_SESSION" ];then
     export SSH_AUTH_SOCK
 fi
 
-export NNN_PLUG='u:umounttree;o:multopen'
+export NNN_PLUG='o:multopen'
+function n {
+  nnn && umount ~/.config/nnn/mounts/* 2>/dev/null
+}
+
+export PATH=$PATH:/home/nn/.local/share/gem/ruby/3.0.0/bin
