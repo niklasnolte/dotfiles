@@ -9,8 +9,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
-"use branch release
-Plugin 'neoclide/coc.nvim', {'pinned': '1'}
 call vundle#end()
 filetype plugin indent on
 
@@ -18,8 +16,8 @@ filetype plugin indent on
 let g:NERDCommentEmptyLines = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDUsePlaceHolders = 0
-nnoremap <C-@> :call NERDComment(0,"toggle")<CR>
-vnoremap <C-@> :call NERDComment(0,"toggle")<CR>
+nnoremap <C-@> :call nerdcommenter#Comment(0,"toggle")<CR>
+vnoremap <C-@> :call nerdcommenter#Comment(0,"toggle")<CR>
 
 "for airline
 let g:airline#extensions#tabline#enabled = 1
