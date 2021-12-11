@@ -19,6 +19,7 @@
     ],
     "git.ignoreLegacyWarning": true,
     "workbench.editor.enablePreview": false,
+    "gitlab.instanceUrl": "https://gitlab.cern.ch",
     "git.confirmSync": false,
     "diffEditor.ignoreTrimWhitespace": false,
     "[cpp]": {
@@ -104,16 +105,15 @@
       "editor.defaultFormatter": "ms-python.python"
     },
     "search.useIgnoreFiles": false,
-    "window.zoomLevel": 1,
     "terminal.integrated.defaultProfile.linux": "zsh",
     "editor.fontFamily": "Source Code Pro",
     "editor.inlineSuggest.enabled": true,
     "github.copilot.enable": {
       "*": true,
       "yaml": true,
-      "plaintext": false,
+      "plaintext": true,
       "markdown": false,
-      "julia": false
+      "julia": true
     },
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -130,5 +130,10 @@
     "julia.enableTelemetry": true,
     "julia.format.indent": 2,
     "julia.completionmode": "import",
+    "python.analysis.autoImportCompletions": false,
+    "window.zoomLevel": 1,
+    "[julia]": {
+      "editor.defaultFormatter": "julialang.language-julia"
+    },
 
 }
