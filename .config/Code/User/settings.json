@@ -135,5 +135,7 @@
     "[julia]": {
       "editor.defaultFormatter": "julialang.language-julia"
     },
+    "julia.enableCrashReporter": false,
+    "telemetry.telemetryLevel": "off",
 
 }
