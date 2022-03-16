@@ -2,8 +2,9 @@
   "latex-workshop.message.update.show": false,
     "latex-workshop.view.pdf.viewer": "tab",
     "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": true,
-        "suppressGitVersionWarning": true
+      "suppressCommitHasNoPreviousCommitWarning": true,
+      "suppressGitMissingWarning": true,
+      "suppressGitVersionWarning": true
     },
     "gitlens.views.repositories.files.layout": "list",
     "vim.handleKeys": {
@@ -80,7 +81,6 @@
     "extensions.ignoreRecommendations": true,
     "jupyter.alwaysTrustNotebooks": true,
     "gitlens.views.branches.showBranchComparison": false,
-    "python.insidersChannel": "daily",
     "tabnine.experimentalAutoImports": true,
     "explorer.confirmDelete": false,
     "editor.cursorStyle": "line",
@@ -112,7 +112,7 @@
       "*": true,
       "yaml": true,
       "plaintext": true,
-      "markdown": false,
+      "markdown": true,
       "julia": true
     },
     "telemetry.enableCrashReporter": false,
@@ -131,11 +131,14 @@
     "julia.format.indent": 2,
     "julia.completionmode": "import",
     "python.analysis.autoImportCompletions": false,
-    "window.zoomLevel": 1,
     "[julia]": {
       "editor.defaultFormatter": "julialang.language-julia"
     },
     "julia.enableCrashReporter": false,
     "telemetry.telemetryLevel": "off",
+    "notebook.output.textLineLimit": 100,
+    "git.ignoreMissingGitWarning": true,
+    "window.zoomLevel": 1,
+    "vim.foldfix": true,
 
 }

@@ -41,7 +41,7 @@
       "when": "terminal.active"
     },
     {
-      "key": "alt+left",
+      "key": "ctrl+k ctrl+b",
       "command": "workbench.action.navigateBack",
       "when": "editorTextFocus"
     },
@@ -53,5 +53,10 @@
     {
       "key": "ctrl+shift+-",
       "command": "-workbench.action.navigateForward"
+    },
+    {
+      "key": "ctrl+k ctrl+b",
+      "command": "-editor.action.setSelectionAnchor",
+      "when": "editorTextFocus"
     },
 ]
