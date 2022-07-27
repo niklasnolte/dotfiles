@@ -33,6 +33,7 @@ endif
 let g:ctrlp_working_path_mode = 0
 
 "misc
+syntax on
 set hlsearch
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.

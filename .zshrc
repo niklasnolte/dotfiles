@@ -59,6 +59,8 @@ ZSH_THEME="clean"
 plugins=(
 )
 
+ZSH=~/.oh-my-zsh
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -98,3 +100,5 @@ function n {
 }
 
 export PATH=$PATH:/home/nn/.local/share/gem/ruby/3.0.0/bin
+
+alias python="python3"
