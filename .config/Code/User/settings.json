@@ -106,7 +106,6 @@
     },
     "search.useIgnoreFiles": false,
     "terminal.integrated.defaultProfile.linux": "zsh",
-    "editor.fontFamily": "Source Code Pro",
     "editor.inlineSuggest.enabled": true,
     "github.copilot.enable": {
       "*": true,
@@ -138,7 +137,7 @@
     "telemetry.telemetryLevel": "off",
     "notebook.output.textLineLimit": 100,
     "git.ignoreMissingGitWarning": true,
-    "window.zoomLevel": 1,
     "vim.foldfix": true,
+    "window.zoomLevel": -1,
 
 }
