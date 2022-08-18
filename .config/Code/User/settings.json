@@ -138,6 +138,10 @@
     "notebook.output.textLineLimit": 100,
     "git.ignoreMissingGitWarning": true,
     "vim.foldfix": true,
-    "window.zoomLevel": -1,
+    "python.defaultInterpreterPath": "/Users/niklasnolte/miniconda3/envs/selenium/bin/python",
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.external.osxExec": "",
+    "terminal.external.linuxExec": "/bin/zsh",
+    "window.zoomLevel": 1,
 
 }

@@ -59,4 +59,9 @@
       "command": "-editor.action.setSelectionAnchor",
       "when": "editorTextFocus"
     },
+    {
+      "key": "escape",
+      "command": "-calva.clearInlineResults",
+      "when": "calva:keybindingsEnabled && editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadOnly && !hasOtherSuggestions && !inlineSuggestionVisible && !parameterHintsVisible && !selectionAnchorSet && !suggestWidgetVisible && editorLangId == 'clojure'"
+    },
 ]
