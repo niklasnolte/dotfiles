@@ -64,4 +64,8 @@
       "command": "-calva.clearInlineResults",
       "when": "calva:keybindingsEnabled && editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadOnly && !hasOtherSuggestions && !inlineSuggestionVisible && !parameterHintsVisible && !selectionAnchorSet && !suggestWidgetVisible && editorLangId == 'clojure'"
     },
+    {
+      "key": "alt+z",
+      "command": "-editor.action.toggleWordWrap"
+    },
 ]

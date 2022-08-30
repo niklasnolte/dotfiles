@@ -79,7 +79,6 @@ source $ZSH/oh-my-zsh.sh
 
 
 
-alias open="xdg-open"
 alias ll="ls -lah"
 
 set editing-mode vi
