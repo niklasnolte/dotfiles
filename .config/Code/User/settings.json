@@ -156,5 +156,6 @@
     "notebook.output.scrolling": true,
     "workbench.colorTheme": "Default Dark+ Experimental",
     "window.zoomLevel": 1,
-
+    "editor.inlineSuggest.enabled": true,
+    "terminal.integrated.inheritEnv": false
 }
