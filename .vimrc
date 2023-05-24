@@ -44,9 +44,6 @@ set directory=~/.vimbackup
 set undofile
 set undodir=~/.vimbackup
 
-set shiftwidth=2
-set expandtab
-set tabstop=2
 set showcmd
 set wildmenu
 colorscheme codedark
@@ -102,3 +99,8 @@ autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " swapping elements
 :vnoremap <C-X> <Esc>`.``gvP``P
+
+set autoindent
+set shiftwidth=2
+set expandtab
+set tabstop=2
