@@ -1,5 +1,5 @@
 [user]
-	email = niklas.nolte@cern.ch
+	email = niklas.nolte@tu-dortmund.de
 	name = niklasnolte
 [alias]
 	st = status
@@ -10,3 +10,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[credential]
+	helper = cache --timeout==1209600
