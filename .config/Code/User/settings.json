@@ -157,5 +157,5 @@
     "workbench.colorTheme": "Default Dark+ Experimental",
     "window.zoomLevel": 1,
     "editor.inlineSuggest.enabled": true,
-    "terminal.integrated.inheritEnv": false
+    "terminal.integrated.inheritEnv": true
 }
