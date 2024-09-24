@@ -1,0 +1,170 @@
+{
+  "latex-workshop.message.update.show": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "gitlens.advanced.messages": {
+      "suppressCommitHasNoPreviousCommitWarning": true,
+      "suppressGitMissingWarning": true,
+      "suppressGitVersionWarning": true
+    },
+    "gitlens.views.repositories.files.layout": "list",
+    "vim.handleKeys": {
+        "<C-t>": false,
+        "<C-k>": false,
+        "<C-d>": false,
+        "<C-b>": false
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "remote.SSH.showLoginTerminal": true,
+    "cSpell.enabledLanguageIds": [
+        "toml"
+    ],
+    "git.ignoreLegacyWarning": true,
+    "workbench.editor.enablePreview": false,
+    "gitlab.instanceUrl": "https://gitlab.cern.ch",
+    "git.confirmSync": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "terminal.integrated.scrollback": 100000,
+    "C_Cpp.updateChannel": "Insiders",
+    "gitlens.views.compare.files.layout": "tree",
+    "cmake.configureOnOpen": false,
+    "workbench.panel.defaultLocation": "right",
+    "python.formatting.provider": "black",
+    "C_Cpp.intelliSenseCacheSize": 1000,
+    "editor.autoClosingBrackets": "never",
+    "vim.normalModeKeyBindings": [
+        {
+            "before" : ["u"],
+            "commands" : [
+                "undo"
+            ]
+        },
+        {
+            "before" : ["<C-r>"],
+            "commands" : [
+                "redo"
+            ]
+        }
+    ],
+    "editor.autoClosingQuotes": "never",
+    "editor.autoSurround": "never",
+    "WolframLanguageServer.WLServerPath": "/home/nn/.local/software/lsp-wl",
+    "WolframLanguageServer.WolframPath": "/usr/local/bin/wolframscript",
+    "languageServerHaskell.hieExecutablePath": "~/.local/bin/hie",
+    "languageServerHaskell.useCustomHieWrapperPath": "~/.local/bin/hie-wrapper",
+    "explorer.confirmDragAndDrop": false,
+    "C_Cpp.default.cppStandard": "c++20",
+    "files.associations": {
+        "*.cuh": "cpp",
+        "*.cu": "cpp"
+    },
+    "editor.minimap.enabled": false,
+    "cSpell.enableFiletypes": [
+        "latex"
+    ],
+    "cSpell.userWords": [
+        "parallelization"
+    ],
+    "liveshare.presence": true,
+    "files.insertFinalNewline": true,
+    "breadcrumbs.enabled": true,
+    "jupyter.askForKernelRestart": false,
+    "jupyter.jupyterServerType": "remote",
+    "jupyter.textOutputLimit": 100000,
+    "workbench.editorAssociations": {
+      "*.ipynb": "jupyter-notebook"
+    },
+    "liveshare.authenticationProvider": "GitHub",
+    "GitLive.Issue tracker integration": "Disabled",
+    "extensions.ignoreRecommendations": true,
+    "jupyter.alwaysTrustNotebooks": true,
+    "gitlens.views.branches.showBranchComparison": false,
+    "tabnine.experimentalAutoImports": true,
+    "explorer.confirmDelete": false,
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "terminal.integrated.profiles.linux": {
+      "/bin/bash (migrated)": {
+        "path": "/bin/bash",
+        "args": [
+          "-l"
+        ]
+      }
+    },
+    "notebook.cellToolbarLocation": {
+      "default": "right",
+      "jupyter-notebook": "left"
+    },
+    "search.useIgnoreFiles": false,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+      "*": false,
+      "plaintext": true,
+      "markdown": true,
+      "scminput": false,
+      "yaml": true,
+      "julia": true,
+      "python": false
+    },
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "remote.SSH.remotePlatform": {
+      "centos": "linux"
+    },
+    "path-intellisense.showHiddenFiles": true,
+    "path-autocomplete.triggerOutsideStrings": true,
+    "terminal.integrated.commandsToSkipShell": [
+      "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true,
+    "julia.executablePath": "/usr/bin/julia",
+    "julia.enableTelemetry": true,
+    "julia.format.indent": 2,
+    "julia.completionmode": "import",
+    "python.analysis.autoImportCompletions": false,
+    "[julia]": {
+      "editor.defaultFormatter": "julialang.language-julia"
+    },
+    "julia.enableCrashReporter": false,
+    "telemetry.telemetryLevel": "off",
+    "notebook.output.textLineLimit": 1000,
+    "git.ignoreMissingGitWarning": true,
+    "vim.foldfix": true,
+    "python.defaultInterpreterPath": "/Users/nolte/miniconda3/envs/pytorch/bin/python",
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.external.osxExec": "",
+    "terminal.external.linuxExec": "/bin/zsh",
+    "gitlens.telemetry.enabled": false,
+    "liveshare.languages.allowGuestCommandControl": true,
+    "liveshare.allowGuestDebugControl": true,
+    "liveshare.allowGuestTaskControl": true,
+    "liveshare.diagnosticLogging": true,
+    "liveshare.notebooks.allowGuestExecuteCells": true,
+    "liveshare.diagnosticLoggingLevel": "Debug",
+    "security.workspace.trust.startupPrompt": "never",
+    "github.copilot.advanced": {},
+    "notebook.output.scrolling": true,
+    "editor.inlineSuggest.enabled": true,
+    "vscode-openai.serviceProvider": "VSCode-OpenAI",
+    "git.openRepositoryInParentFolders": "never",
+    "jupyter.widgetScriptSources": [
+      "jsdelivr.com",
+      "unpkg.com"
+    ],
+    "jupyter.runStartupCommands": [
+      "%load_ext autoreload\n%autoreload 2"
+    ],
+    "editor.accessibilitySupport": "off",
+    "window.confirmBeforeClose": "always",
+    "files.autoSave": "afterDelay",
+    "jupyter.debugJustMyCode": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "interactiveWindow.executeWithShiftEnter": true,
+    "remote.extensionKind": {
+      "continue.continue": "workspace"
+    }
+}

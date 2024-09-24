@@ -1,0 +1,89 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+shift+l",
+        "when": "terminalFocus",
+        "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "when": "terminalFocus",
+        "command": "workbench.action.terminal.focusPrevious"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported"
+    },
+    {
+      "key": "ctrl+[Semicolon]",
+      "command": "workbench.action.terminal.toggleTerminal",
+      "when": "terminal.active"
+    },
+    {
+      "key": "ctrl+`",
+      "command": "-workbench.action.terminal.toggleTerminal",
+      "when": "terminal.active"
+    },
+    {
+      "key": "ctrl+k ctrl+b",
+      "command": "workbench.action.navigateBack",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "alt+right",
+      "command": "workbench.action.navigateForward",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+shift+-",
+      "command": "-workbench.action.navigateForward"
+    },
+    {
+      "key": "ctrl+k ctrl+b",
+      "command": "-editor.action.setSelectionAnchor",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "escape",
+      "command": "-calva.clearInlineResults",
+      "when": "calva:keybindingsEnabled && editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadOnly && !hasOtherSuggestions && !inlineSuggestionVisible && !parameterHintsVisible && !selectionAnchorSet && !suggestWidgetVisible && editorLangId == 'clojure'"
+    },
+    {
+      "key": "alt+z",
+      "command": "-editor.action.toggleWordWrap"
+    },
+    {
+      "key": "alt+z",
+      "command": "-workbench.action.terminal.sizeToContentWidth",
+      "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen || terminalFocus && terminalIsOpen && terminalProcessSupported"
+    },
+    {
+      "key": "cmd+k cmd+,",
+      "command": "editor.debug.action.selectionToRepl"
+    },
+    {
+      "key": "cmd+k cmd+,",
+      "command": "-editor.createFoldingRangeFromSelection",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "cmd+i cmd+i",
+      "command": "editor.action.inlineSuggest.trigger"
+    },
+]
